@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liczby podzielne przez 3 i 5", "Liczby podzielne przez 3 i 5\Liczby podzielne przez 3 i 5.csproj", "{5CBEB852-BB76-459A-BF44-E4D07E21597F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CBEB852-BB76-459A-BF44-E4D07E21597F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CBEB852-BB76-459A-BF44-E4D07E21597F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CBEB852-BB76-459A-BF44-E4D07E21597F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CBEB852-BB76-459A-BF44-E4D07E21597F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7AF1C908-EAC5-4AB4-96B9-3EF095CA3445}
+	EndGlobalSection
+EndGlobal
