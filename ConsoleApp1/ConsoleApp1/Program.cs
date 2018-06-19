@@ -12,7 +12,7 @@ public class Program
             if (i % 2 == 1)
             {
                 result = result + i;
-            }
+            } 
         }
         Console.Write("Suma liczb nieparzystych: " + result);
         Console.ReadLine();
