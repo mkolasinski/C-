@@ -22,6 +22,17 @@ namespace BMI
                     bmi = Math.Round(kg/(m*m));
                 Console.WriteLine("Wskaźnik BMI wynosi: " + bmi);
                 Console.ReadLine();
+
+                if (bmi < 18.5) {
+                    Console.WriteLine("Masz niedowagę.");
+                } else if (bmi >= 18.5 && bmi <= 24.99)
+                {
+                    Console.WriteLine("Twoja waga jest w normie.");
+                } else if (bmi >= 25)
+                {
+                    Console.WriteLine("Masz nadwagę.");
+                }
+                Console.ReadLine();
             } else
             {
                 Console.WriteLine("Podałeś złą płeć. Uruchom program jeszcze raz i dokonaj obliczeń.");
