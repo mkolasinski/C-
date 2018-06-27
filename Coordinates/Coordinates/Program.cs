@@ -15,7 +15,7 @@ namespace Coordinates
 
             if ( x == 0 && y == 0 )
             {
-                Console.WriteLine("Point ({0},{1} is located in the start of the coordinate system", x, y);
+                Console.WriteLine("Point ({0},{1}) is located in the start of the coordinate system", x, y);
             } else if ( x > 0 && y > 0) {
                 Console.WriteLine("Point ({0},{1}) is located in First quandrant.", x, y);
             } else if ( x > 0 && y < 0)
