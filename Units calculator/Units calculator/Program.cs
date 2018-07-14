@@ -19,51 +19,56 @@ namespace Units_calculator
             Console.WriteLine("mm - milimeters");
             unit = Convert.ToString(Console.ReadLine());
             Console.WriteLine("Enter a number: ");
-            n = int.Parse(Console.ReadLine());
+            n = double.Parse(Console.ReadLine());
             Console.WriteLine("Enter an output unit:");
             output = Convert.ToString(Console.ReadLine());
-            
-            if ( unit == "m")
+
+            if (unit != "mm" || unit != "m" || unit != "km")
             {
-                if ( output == "mm")
+                Console.WriteLine("Wrong unit! Select unit once again!");
+                Console.ReadLine();
+            }
+            if (unit == "m")
+            {
+                if (output == "mm")
                 {
                     result = n * 1000;
                     Console.WriteLine(result + "mm");
                     Console.ReadLine();
                 }
-                else if ( output == "km")
+                else if (output == "km")
                 {
-                    result = n/1000;
+                    result = n / 1000;
                     Console.WriteLine(result + "km");
                     Console.ReadLine();
                 }
-            } else if ( unit == "mm")
+            } else if (unit == "mm")
+            {
+                if (output == "m")
                 {
-                    if (output == "m")
-                    {
-                        result = n / 100;
-                        Console.WriteLine(result + "m");
-                        Console.ReadLine();
-                    } else if ( output == "km")
-                        {
-                            result = n / 1000000;
-                            Console.WriteLine(result + "km");
-                            Console.ReadLine();
-                        }
-            } else if ( unit == "km")
+                    result = n / 100;
+                    Console.WriteLine(result + "m");
+                    Console.ReadLine();
+                } else if (output == "km")
                 {
-                    if (output == "m")
-                    {
-                        result = n * 1000;
-                        Console.WriteLine(result + "m");
-                        Console.ReadLine();
-                    } else if (output == "mm")
-                        {
-                            result = n * 1000000;
-                            Console.WriteLine(result + "mm");
-                            Console.ReadLine();
-                        }
+                    result = n / 1000000;
+                    Console.WriteLine(result + "km");
+                    Console.ReadLine();
                 }
+            } else if (unit == "km")
+            {
+                if (output == "m")
+                {
+                    result = n * 1000;
+                    Console.WriteLine(result + "m");
+                    Console.ReadLine();
+                } else if (output == "mm")
+                {
+                    result = n * 1000000;
+                    Console.WriteLine(result + "mm");
+                    Console.ReadLine();
+                }
+            } 
             }
         } 
     }
