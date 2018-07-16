@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Print the odd numbers from 1 to 99", "Print the odd numbers from 1 to 99\Print the odd numbers from 1 to 99.csproj", "{48FD00B1-B0AD-4E3C-858D-83DC52A314BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48FD00B1-B0AD-4E3C-858D-83DC52A314BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48FD00B1-B0AD-4E3C-858D-83DC52A314BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48FD00B1-B0AD-4E3C-858D-83DC52A314BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48FD00B1-B0AD-4E3C-858D-83DC52A314BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58FFE00A-A900-43FB-BADA-2E4A34336B87}
+	EndGlobalSection
+EndGlobal
