@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Search the position in string", "Search the position in string\Search the position in string.csproj", "{FF173FAB-4F13-426D-BC4E-91CD6E655AFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF173FAB-4F13-426D-BC4E-91CD6E655AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF173FAB-4F13-426D-BC4E-91CD6E655AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF173FAB-4F13-426D-BC4E-91CD6E655AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF173FAB-4F13-426D-BC4E-91CD6E655AFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D50CD21D-91CD-45E3-9BFC-3DDAA81CBE7D}
+	EndGlobalSection
+EndGlobal
