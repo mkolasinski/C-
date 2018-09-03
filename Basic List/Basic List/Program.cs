@@ -1,28 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Basic_List
+public class Person
 {
-    class Program
+    public string Name { get; set; }
+
+    public int Age { get; set; }
+
+    public int Id { get; set; }
+
+    public override string ToString()
     {
-        static void Main(string[] args)
-        {
-            List<int> numbers = new List<int>();
+        return "ID: " + Id + ", Name: " + Name;
+    }
+}
 
-            numbers.Add(1);
-            numbers.Add(2);
-            numbers.Add(3);
-            numbers.Add(4);
+public class Example
+{
+    public static void Main()
+    {
+        List <Person> people = new List<Person>();
 
-            foreach ( int element in numbers)
-            {
-                Console.WriteLine("This is element of list: {0}", element);
-            }
+        people.Add(new Person() { Id=1, Name = "John", Age = 24 });
+        people.Add(new Person() { Id=2, Name = "Tom", Age = 27 });
+        people.Add(new Person() { Id = 3, Name = "Simon", Age = 34 });
 
-            Console.ReadKey();
-        }
+        foreach (Person element in people)
+            Console.WriteLine(element);
+
+        Console.ReadKey();
     }
 }
