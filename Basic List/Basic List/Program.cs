@@ -11,7 +11,7 @@ public class Person
 
     public override string ToString()
     {
-        return "ID: " + Id + ", Name: " + Name;
+        return "ID: " + Id + ", Name: " + Name + ", Age: " + Age;
     }
 }
 
@@ -26,7 +26,12 @@ public class Example
         people.Add(new Person() { Id = 3, Name = "Simon", Age = 34 });
 
         foreach (Person element in people)
-            Console.WriteLine(element);
+        {
+            Console.WriteLine("Id: " + element.Id);
+            Console.WriteLine("Name: " + element.Name );
+            Console.WriteLine("Age: " + element.Age);
+            Console.WriteLine("---------------");
+        }
 
         Console.ReadKey();
     }
