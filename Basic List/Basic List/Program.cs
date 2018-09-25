@@ -114,6 +114,45 @@ public class Example
             Select();
         }
 
+        Console.WriteLine("");
+        Console.WriteLine("----------------");
+        Console.WriteLine("Show people who... : ");
+        Console.WriteLine("... are younger than 25 y.o. - click '1' ");
+        Console.WriteLine("... are older than 25 y.o. - click '2' ");
+
+        var older = from old in people
+                    where old.Age >= 25
+                    orderby old.Id
+                    select old;
+
+        var younger = from young in people
+                      where young.Age < 25
+                      orderby young.Id
+                      select young;
+
+        int display = int.Parse(Console.ReadLine());
+        
+
+        if ( display == 1 )
+        {
+            Console.WriteLine("");
+            Console.WriteLine("-----------------");
+            Console.WriteLine("People who are younger than 25 y.o :");
+            foreach (Person young in younger)
+            {
+                Console.WriteLine(young.Name + " is " + young.Age);
+            }
+        } else if ( display == 2 )
+        {
+            Console.WriteLine("");
+            Console.WriteLine("-----------------");
+            Console.WriteLine("People who are older than 25 y.o :");
+
+            foreach (Person old in older)
+            {
+                Console.WriteLine(old.Name + " is " + old.Age);
+            }
+        }
         Console.ReadKey();
     }
 }
